@@ -2,18 +2,94 @@
 
 :root {
 	--bg: #000;
-	--fg: #fff;
+	--fg: #f00;
+	--sec: #171717;
+	--ter: #fff;
 }
 
-html, body {
+html, body, center {
 	background: var(--bg);
 	color: var(--fg);
 	font-family: 'B612', sans-serif;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+}
+
+hr {
+	border-color: var(--sec);
+	border-style: solid;
+	width: 90%;
+}
+
+a {
+	color: var(--ter);
+	font-family: inherit;
+	font-weight: 200;
+	text-decoration: none;
+}
+
+a:hover {
+	color: var(--ter);
+	font-family: inherit;
+	font-weight: bold;
+}
+
+#content {
+	background-image: url("cointainterbg.svg");
+	background-repeat: space;
+	background-size: 3%;
+	width: 80%;
+	border-radius: 20px;
+	border-color: var(--sec);
+	border-width: 2px;
+	border-style: solid;
+}
+
+#prefixpath {
+	stroke-dasharray: 0;
+	stroke-dashoffset: 0;
+	animation: fade 1.5s ease-out forwards;
+}
+
+#prefixpathoutline {
+	stroke-dasharray: 0;
+	stroke-dashoffset: 0;
+	animation: fade 1.5s ease-out forwards;
 }
 
 #logopath {
 	stroke-dasharray: 0;
-	animation: dash 5s linear;
+	animation: dash 3s ease-out;
+}
+
+#topbar, #logo {
+	height: 100%;
+	width: 100%;
+}
+
+#topbar {
+	animation-name: topbar;
+	animation-duration: 0.75s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fade {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		stroke-dasharray: 100;
+		stroke-dashoffset: 100;
+		opacity: 0;
+		transform: translateX(10px);
+	}
+	100% {
+		stroke-dasharray: 0;
+		stroke-dashoffset: 0;
+		opacity: 1;
+		transform: translateX(0px);
+	}
 }
 
 @keyframes dash {
@@ -27,10 +103,18 @@ html, body {
 		opacity: 1;
 	}
 	6% {
+		stroke-dasharray: 0;
+		stroke-dashoffset: 0;
 		opacity: 1;
 	}
 	to {
 		stroke-dasharray: 100;
 		stroke-dashoffset: 1000;
+	}
+}
+
+@keyframes topbar {
+	to {
+		height: 12%;
 	}
 }

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="5 5 20 20" preserveAspectRatio="xMidYMid meet">
+	<path d="
+	M 5 10
+	l 10 0
+	M 10 5 
+	l 0 10
+	" stroke="#222" stroke-width="2" fill="none">
+	    <animateTransform
+		attributeName="transform"
+		attributeType="XML"
+		type="rotate"
+		from="0 10 10"
+		to="360 10 10"
+		dur="4s"
+		repeatCount="indefinite"
+		/>
+		<animate
+		attributeName="opacity"
+		from="1"
+		to=".4"
+		dur="2s"
+		fill="freeze"
+		/>
+	</path>
+</svg>
