@@ -4,11 +4,12 @@ img {
 }
 
 table {
-	font-weight: 500;;
+	background: var(--bg);
+	font-weight: 500;
 	margin: 2%;
 	padding: 2%;
 	border: 1px solid;
-	border-spacing: 0;;
+	border-spacing: 0;
 }
 
 .header {
