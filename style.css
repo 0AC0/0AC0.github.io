@@ -38,8 +38,8 @@ a:hover {
 #content {
 	background-image: url("cointainterbg.svg");
 	background-repeat: space;
-	background-size: 3%;
-	width: 80%;
+	background-size: 1em;
+	width: 70%;
 	border-radius: 20px;
 	border-color: var(--sec);
 	border-width: 2px;

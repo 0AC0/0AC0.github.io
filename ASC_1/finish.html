@@ -1,0 +1,212 @@
+
+
+<!DOCTYPE html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="../style.css">
+	<link rel="stylesheet" type="text/css" href="stylefinish.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<title>ASC Project 1</title>
+	</head>
+	
+	<body>
+		<center>
+			<br>
+			<br>
+			<br>
+			<div id="content">
+			<h1>Data</h1>
+			<br>
+				<table>
+					<TR>
+						<TD class="header">Platform</TD>
+						<TD class="header">Apple MacBook M1 Pro (2020)</TD>
+						<TD class="header">Lenovo ThinkPad X13s</TD>
+						<TD class="header">Samsung S21 Ultra: Performance</TD>
+						<TD class="header">Samsung S21 Ultra: Power Save</TD>
+						<TD class="header">Raspberry Pi 4</TD>
+					</TR>
+					<TR>
+						<TD class="header">Geekbench 6 Single</TD>
+						<TD>2323</TD>
+						<TD>1658</TD>
+						<TD>1990</TD>
+						<TD>1862</TD>
+						<TD>255</TD>
+					</TR>
+					<TR>
+						<TD class="header">Geekbench 6 Multi</TD>
+						<TD>8150</TD>
+						<TD>7052</TD>
+						<TD>5168</TD>
+						<TD>5233</TD>
+						<TD>580</TD>
+					</TR>
+					<TR>
+						<TD class="header">PassMark CPU</TD>
+						<TD>13785</TD>
+						<TD>6500</TD>
+						<TD>9710</TD>
+						<TD>9499</TD>
+						<TD>504</TD>
+					</TR>
+					<TR>
+						<TD class="header">PassMark RAM</TD>
+						<TD>2805</TD>
+						<TD>1889</TD>
+						<TD>34871</TD>
+						<TD>36779</TD>
+						<TD>662</TD>
+					</TR>
+					<TR>
+						<TD class="header">john md5 virtual/idle</TD>
+						<TD>15311</TD>
+						<TD>89932</TD>
+						<TD>81984</TD>
+						<TD>80864</TD>
+						<TD>22438</TD>
+					</TR>
+					<TR>
+						<TD class="header">john md5 real</TD>
+						<TD>15280</TD>
+						<TD>12895</TD>
+						<TD>27465</TD>
+						<TD>20266</TD>
+						<TD>5637</TD>
+					</TR>
+					<TR>
+						<TD class="header">V8 Benchmark Suite V5</TD>
+						<TD>60197</TD>
+						<TD>39345</TD>
+						<TD>46355</TD>
+						<TD>44317</TD>
+						<TD>7666</TD>
+					</TR>
+					<TR>
+						<TD class="header">V8 Richards</TD>
+						<TD>36442</TD>
+						<TD>26915</TD>
+						<TD>30410</TD>
+						<TD>28561</TD>
+						<TD>6300</TD>
+					</TR>
+					<TR>
+						<TD class="header">V8 DeltaBlue</TD>
+						<TD>117243</TD>
+						<TD>84109</TD>
+						<TD>99659</TD>
+						<TD>84713</TD>
+						<TD>14100</TD>
+					</TR>
+					<TR>
+						<TD class="header">V8 Crypto</TD>
+						<TD>45871</TD>
+						<TD>36151</TD>
+						<TD>44540</TD>
+						<TD>42499</TD>
+						<TD>8359</TD>
+					</TR>
+					<TR>
+						<TD class="header">V8 RayTrace</TD>
+						<TD>135516</TD>
+						<TD>81702</TD>
+						<TD>88976</TD>
+						<TD>85712</TD>
+						<TD>15560</TD>
+					</TR>
+					<TR>
+						<TD class="header">V8 EarleyBoyer</TD>
+						<TD>108753</TD>
+						<TD>57981</TD>
+						<TD>80506</TD>
+						<TD>79858</TD>
+						<TD>11950</TD>
+					</TR>
+					<TR>
+						<TD class="header">V8 RegExp</TD>
+						<TD>15646</TD>
+						<TD>9823</TD>
+						<TD>12267</TD>
+						<TD>11674</TD>
+						<TD>1791</TD>
+					</TR>
+					<TR>
+						<TD class="header">V8 Splay</TD>
+						<TD>63378</TD>
+						<TD>38329</TD>
+						<TD>38777</TD>
+						<TD>40865</TD>
+						<TD>6287</TD>
+					</TR>
+				</table>
+			<h1>Links</h1>
+			<br>
+			<p>[<a href="index.html">Graphs</a>]</p>
+			<p>[<a href="data.csv">Raw data.csv</a>]</p>
+			<p>[<a href="res/models.blend">3D models</a>]</p>
+			<p>[<a href="ARM Computing Systems.pdf">PDF</a>]</p>
+			<br>
+			<h1>Screenshots</h1>
+			<br>
+			<h2>Geekbench</h2>
+			<img src="screenshots_macbook/geekbench.png"> </img>
+			<img src="screenshots_pi/geekbench.png"> </img>
+			<img src="screenshots_samsung/geekbench powersave.jpg" class="tallscreenshot"> </img>
+			<img src="screenshots_samsung/geekbench performance.jpg" class="tallscreenshot"> </img>
+			<img src="screenshots_thinkpad/geekbench.png"> </img>
+			<br>
+			<h2>Passmark</h2>
+			<br>
+			<img src="screenshots_macbook/passmark.png"> </img>
+			<img src="screenshots_pi/passmark.png"> </img>
+			<img src="screenshots_samsung/passmark powersave.jpg" class="tallscreenshot"> </img>
+			<img src="screenshots_samsung/passmark performance.jpg" class="tallscreenshot"> </img>
+			<img src="screenshots_thinkpad/passmark.png"> </img>
+			<br>
+			<h2>john --test --format=md5crypt</h2>
+			<br>
+			<h4 style="color: var(--ter)">MacBook:</h4>
+			<img src="screenshots_macbook/john.png"> </img>
+			<h4 style="color: var(--ter)">Pi 4 (64bit raspbian):</h4>
+			<img src="screenshots_pi/john.png"> </img>
+			<h4 style="color: var(--ter)">S23 Ultra (Termux app):</h4>
+			<img src="screenshots_samsung/john powersave.jpg"> </img>
+			<img src="screenshots_samsung/john performance.jpg"> </img>
+			<h4 style="color: var(--ter)">Thinkpad (Debian):</h4>
+			<img src="screenshots_thinkpad/john.png"> </img>
+			<br>
+			<h2>V8 benchmark suite version 5</h2>
+			<br>
+			<img src="screenshots_macbook/v8.png" class="tallscreenshot"> </img>
+			<img src="screenshots_pi/v8.png" class="tallscreenshot"> </img>
+			<img src="screenshots_samsung/v8 powersave.jpg" class="tallscreenshot"> </img>
+			<img src="screenshots_samsung/v8 performance.jpg" class="tallscreenshot"> </img>
+			<img src="screenshots_thinkpad/v8.png"> </img>
+			<br>
+			<h1>Unused Screenshots</h1>
+			<br>
+			<h2>glxgears</h2>
+			<img src="screenshots_thinkpad/glxgears.png"> </img>
+			<br>
+			<h2>3DMark</h2>
+			<br>
+			<img src="screenshots_samsung/3dmark powersave.jpg"> </img>
+			<img src="screenshots_samsung/3dmark performance.jpg"> </img>
+			<br>
+			<h2>Geekbench GPU</h2>
+			<br>
+			<img src="screenshots_samsung/geekbench opencl powersave.jpg" class="tallscreenshot"> </img>
+			<img src="screenshots_samsung/geekbench opencl performance.jpg" class="tallscreenshot"> </img>
+			<img src="screenshots_samsung/geekbench vulkan powersave.jpg" class="tallscreenshot"> </img>
+			<img src="screenshots_samsung/geekbench vulkan performance.jpg" class="tallscreenshot"> </img>
+			<br>
+			<h2>Minecraft: Java Edition</h2>
+			<h4>(running on a phone)</h4>
+			<br>
+			<img src="screenshots_samsung/minecraft java powersave.jpg"> </img>
+			<img src="screenshots_samsung/minecraft java performance.jpg"> </img>
+			<br>
+			<br>
+		</div>
+	</center>
+</body>

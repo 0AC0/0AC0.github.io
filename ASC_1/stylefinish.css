@@ -1,0 +1,35 @@
+
+img {
+	width: 70%;
+}
+
+table {
+	font-weight: 500;;
+	margin: 2%;
+	padding: 2%;
+	border: 1px solid;
+	border-spacing: 0;;
+}
+
+.header {
+	color: var(--fg);
+}
+
+td, tr {
+	color: var(--ter);
+	border-bottom: 1px solid var(--sec);
+	border-left: 1px solid var(--sec);
+	border-right: 1px solid var(--sec);
+	border-top: 1px solid var(--sec);
+}
+
+.tallscreenshot {
+	width: 40%;
+}
+
+h1 {
+	color: var(--fg);
+}
+h3 {
+	color: var(--fg);
+}
