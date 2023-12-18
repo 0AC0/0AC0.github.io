@@ -176,6 +176,7 @@ function parse(data) {
 			consume();
 			index++;
 		} else {
+			array_data[i2][i] = data.slice(index, peek() - 1);
 			i = -1;
 			i2++;
 			if (array_data[i2] == undefined) {
