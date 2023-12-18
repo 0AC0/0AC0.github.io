@@ -28,16 +28,16 @@ function main(data) {
 	if (canvas.getContext) {
 		ctx = canvas.getContext("2d");
 		canvas.addEventListener('click', () => {
-			nextScreen()
+			nextScreen();
 		}, false);
-		nextScreen()
+		nextScreen();
 	}
 }
 
 function nextScreen() {
 		screen += 1;
 		if (screen >= array_data.length) { window.location.href = "finish.html"; }
-		graphScreen(screen);
+		else graphScreen(screen);
 }
 
 function graphScreen(index) {
@@ -147,7 +147,6 @@ function parse(data) {
 	function consume() {
 		while (
 			data[index] != ','
-			&& data[index] != '\0'
 			&& data[index] != '\n'
 			&& data[index] != '\r'
 			&& index < data.length
@@ -159,7 +158,6 @@ function parse(data) {
 		var ret = index;
 		while (
 			data[ret] != ','
-			&& data[ret] != '\0'
 			&& data[ret] != '\n'
 			&& data[ret] != '\r'
 			&& ret < data.length
@@ -169,23 +167,22 @@ function parse(data) {
 		return ret;
 	}
 	var i2 = 0;
+	if (array_data[i2] == undefined) {
+		array_data[i2] = new Array();
+	}
 	for (var i = 0; index < data.length; i++) {
-		if (data[index] == '\n') {
-			index += 1;
-			i2++;
-			i = 0;
-			if (index >= data.length) return;
-		}
-		if (array_data[i2] == undefined) {
-			array_data[i2] = new Array();
-		}
-		if (data[peek()] != '\n') {
+		if (data.codePointAt(peek()) != 10) {
 			array_data[i2][i] = data.slice(index, peek());
 			consume();
 			index++;
 		} else {
+			i = -1;
+			i2++;
+			if (array_data[i2] == undefined) {
+				array_data[i2] = new Array();
+			}
 			consume();
-			index += 2;
+			index += 1;
 		}
 	}
 }
